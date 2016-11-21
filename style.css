@@ -17,8 +17,8 @@ html body {
 .container .text {
   color: red;
   position: absolute;
-  padding-top:21%;
-  padding-left:26%;
+  padding-top:18%;
+  padding-left:24%;
   font-size: 50px;
   font-size: 4.8vw;
   font-family: sans-serif;
@@ -26,11 +26,21 @@ html body {
   
 }
 
+.container a{
+    color: white;
+    border: 3px solid #fff;
+    padding: 15px;
+    font-size: 30px;
+    font-family:'Arial','Helvetica',sans-serif;
+    box-sizing: border-box;
+    border-radius: 2px;
+    text-transform: uppercase;
+}
 .container .text1 {
   color: #FFF;
   position: absolute;
-  margin-top:21%;
-  padding-left:38%;
+  margin-top:18%;
+  padding-left:36%;
   font-size: 50px;
   
   font-size: 4.8vw;
@@ -41,8 +51,8 @@ html body {
 .container .text2 {
   color: #FFF;
   position: absolute;
-  padding-top:30%;
-  padding-left:41%;
+  padding-top:25%;
+  padding-left:37%;
   font-size: 35px;
   
   font-size: 3.2vw;
