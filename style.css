@@ -42,6 +42,7 @@ html body {
     margin-left:520px;
     margin-right:520px;
 }
+
 .container .text1 {
   color: #FFF;
   position: absolute;
@@ -68,6 +69,7 @@ html body {
 @media all and (max-width:750px)
 {
 
+.container a{
  color: white;
     border: 3px solid #fff;
     
@@ -82,6 +84,7 @@ html body {
     margin-right:300px;
     margin-left:300px;
 }
+
 .container .text{
 padding-top:60%;
 }
