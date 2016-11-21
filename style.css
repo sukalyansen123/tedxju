@@ -27,14 +27,20 @@ html body {
 }
 
 .container a{
+    
     color: white;
     border: 3px solid #fff;
-    padding: 15px;
+    
     font-size: 30px;
     font-family:'Arial','Helvetica',sans-serif;
     box-sizing: border-box;
     border-radius: 2px;
     text-transform: uppercase;
+    display:block;
+    padding: 8px;
+    margin:320px;
+    margin-left:520px;
+    margin-right:520px;
 }
 .container .text1 {
   color: #FFF;
@@ -62,19 +68,19 @@ html body {
 @media all and (max-width:750px)
 {
 
-.container a{
-
-    color: white;
+ color: white;
     border: 3px solid #fff;
-    padding: 15px;
+    
     font-size: 10px;
     font-family:'Arial','Helvetica',sans-serif;
     box-sizing: border-box;
     border-radius: 2px;
     text-transform: uppercase;
-
-
-
+    display:block;
+    padding: 10px;
+    margin:380px;
+    margin-right:300px;
+    margin-left:300px;
 }
 .container .text{
 padding-top:60%;
