@@ -66,14 +66,13 @@
 
 
 <body onload="myFunction()" style="margin:0;">
- <div id="cont">	
-<div class="square1"></div>
-	<div class="square2"></div>
-	<div class="square3"></div>
-	<div class="square4"></div>
-    <div class="square5"></div>
-    <div class="square6"></div>
-    
+ <div id="preloader" class="loading">
+  <span class="slice"></span>
+  <span class="slice"></span>
+  <span class="slice"></span>
+  <span class="slice"></span>
+  <span class="slice"></span>
+  <span class="slice"></span>
 </div>
 <div id="main" class="animate" style="display:none;">
  	
@@ -186,7 +185,7 @@ function myFunction() {
 }
 
 function showPage() {
-  document.getElementById("cont").style.display = "none";
+  document.getElementById("preloader").style.display = "none";
   document.getElementById("main").style.display = "block";
 }
     $('span.btn').click(function(){
