@@ -25,7 +25,7 @@
     <!-- Theme Style -->
     <link rel="stylesheet" href="style.css">   
     <link rel="stylesheet" href="main.css">   
-	
+	 <link rel="stylesheet" href="loader.css">
     <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="jquery.fullPage.min.js"></script>
@@ -42,13 +42,41 @@
             font-size: 6em;
             text-align: center;
         }
+	   
+	   animate {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 }
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+  from{ bottom:-100px; opacity:0 }
+  to{ bottom:0; opacity:1 }
+}
     </style>
 </head>  
 
 
 
-<body>
-  	
+<body onload="myFunction()" style="margin:0;">
+ <div id="cont">	
+<div class="square1"></div>
+	<div class="square2"></div>
+	<div class="square3"></div>
+	<div class="square4"></div>
+    <div class="square5"></div>
+    <div class="square6"></div>
+    
+</div>
+<div id="main" class="animate" style="display:none;">
+ 	
   	<div id="navbar"><img src="logo1.png" id="logo"/>
   	<span class="btn">&#8801;</span>
  <ul class="nav">
@@ -145,13 +173,22 @@
 		</div>
 </div>
   
-  
+	</div>  
   
   
   
 </body>
 <script type="text/javascript">
-    
+        var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 5000);
+}
+
+function showPage() {
+  document.getElementById("cont").style.display = "none";
+  document.getElementById("main").style.display = "block";
+}
     $('span.btn').click(function(){
     $('ul.nav').slideToggle();
     })
