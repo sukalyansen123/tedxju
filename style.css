@@ -315,6 +315,6 @@ opacity:0.8;
  }
  
  .btn:before{
- content:'\2630';
+ content:'';
  } 
 }
