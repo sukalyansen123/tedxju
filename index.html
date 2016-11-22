@@ -49,8 +49,9 @@
 
 <body>
   	
-  	<div id="navbar">
- <ul>
+  	<div id="navbar"><img src="logo.resized.png" id="logo"/>
+  	<span class="btn">&#9776</span>
+ <ul class="nav">
   	<li class="active"><a href="#page1">Home</a></li>
   	<li><a href="#page2">About</a></li>
   	
@@ -149,4 +150,18 @@
   
   
 </body>
-
+<script type="text/javascript">
+    
+    $('span.btn').click(function(){
+    $('ul.nav').slideToggle();
+    })
+    $(window).resize(function(){
+    if($(window).width>750){
+    
+    $('ul.nav').removeAttr('style');
+    }
+    
+    })
+	
+    </script>
+    
