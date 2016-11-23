@@ -1,3 +1,46 @@
+
+figure {
+-webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    display: inline-block;
+   margin-left:30px;;
+    margin-top:120px;
+        
+}
+figure img {
+   	height:120px;
+   	width:120px;
+    vertical-align: top;
+    border-radius:50%;
+}
+figure figcaption {
+   font-size:15px;
+    text-align: center;
+    color:#fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #rig {
     max-width:100%;
     margin:0 auto; /*center aligned*/
