@@ -34,6 +34,37 @@
         $(document).ready(function() {
             $('#fullpage').fullpage({
                 sectionsColor: ['#f2f2f2', '#4BBFC3', '#242424', '#242424', '#000'],
+		    afterLoad: function (anchorLink, index) {
+        //section 2 loaded
+        
+        if (index == 1) {
+        $('#navbar').find('li.active').removeClass('active');
+            //adding active class to the 1st element in the slide menu
+            $('#navbar').find('li.first').addClass('active');
+        }
+        if (index == 2){
+        		$('#navbar').find('li.active').removeClass('active');
+            //adding active class to the 1st element in the slide menu
+            $('#navbar').find('li.second').addClass('active');
+        }
+        if (index == 3){
+        		$('#navbar').find('li.active').removeClass('active');
+            //adding active class to the 1st element in the slide menu
+            $('#navbar').find('li.third').addClass('active');
+        }
+			    
+        if (index == 4){
+        		$('#navbar').find('li.active').removeClass('active');
+            //adding active class to the 1st element in the slide menu
+            $('#navbar').find('li.fourth').addClass('active');
+        }
+			    
+        if (index == 5){
+        		$('#navbar').find('li.active').removeClass('active');
+            //adding active class to the 1st element in the slide menu
+            $('#navbar').find('li.fifth').addClass('active');
+        }
+    },
 		    
             });
         });
@@ -80,14 +111,14 @@
   	<div id="navbar"><img src="logo1.png" id="logo"/>
   	<span class="btn">&#8801;</span>
  <ul class="nav">
-  	<li class="active"><a href="#page1">Home</a></li>
-  	<li><a href="#page2">About</a></li>
+  	<li class="first"><a href="#page1">Home</a></li>
+  	<li class="second"><a href="#page2">About</a></li>
   	
-  	<li><a href="#page3">Speakers</a></li>
+  	<li class="third"><a href="#page3">Speakers</a></li>
 
-  	<li><a href="#page4">The Team</a></li>
+  	<li class="fourth"><a href="#page4">The Team</a></li>
 
-  	<li><a href="#page3">Venue</a></li>
+  	<li class="fifth"><a href="#page3">Venue</a></li>
   </ul>
   	</div>
   				
