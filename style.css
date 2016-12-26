@@ -37,7 +37,23 @@ html body {
   font-family: 'Arial','Helvetica',sans-serif;
   font-weight: .2;
 }
-
+.container a{
+    
+    color: white;
+    border: 3px solid #fff;
+    text-decoration:none;
+    font-size: 30px;
+    font-family:fantasy;
+    box-sizing: border-box;
+    border-radius: 2px;
+    text-transform: uppercase;
+    display:block;
+    padding: 8px;
+    margin:320px;
+    margin-left:520px;
+    margin-right:520px;
+    margin-bottom:100px;
+}
 .container .text2 {
   color: #FFF;
   position: absolute;
@@ -51,7 +67,23 @@ html body {
 }
 @media all and (max-width:750px)
 {
+.container a{
+  color: white;
+    border: 3px solid #fff;
+    
+    font-size: 10px;
+    font-family:'Arial','Helvetica',sans-serif;
+    box-sizing: border-box;
+    border-radius: 2px;
+    text-transform: uppercase;
+    display:block;
+    padding: 8px;
+    margin:320px;
+    margin-left:200px;
+    margin-right:200px;
+    margin-bottom:100px;
 
+}
 .container .text{
 padding-top:50%;
 }
